@@ -1,0 +1,272 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#4C4C4D;
+    color: white;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+    width:100%;
+}
+
+.remote {
+    padding: 2%;
+    font-size: 3rem;
+}
+
+.first-container {
+    display: flex;
+    justify-content: space-between;
+    background: #7D7D7D;
+    width: 100%;
+    margin-left: -2%;
+    margin-top: -2%;
+    padding: 2%;
+}
+
+.second-container {
+    padding: 2% 0 10% 0;
+}
+
+.second-container .chaines {
+    display: flex;
+    justify-content: space-around;
+}
+
+.second-container .arrow-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.arrow-menu .column{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 0.5%;
+}
+
+.arrow-menu .first-col.column, .arrow-menu .five-col.column{
+   justify-content: space-between; 
+}
+
+.third-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: -2%;
+}
+
+.third-container .first-col{
+    border-top: solid 1px white;
+    border-right: solid 2px #363636;
+    border-bottom: solid 2px #363636;
+}
+
+.third-container .second-col {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.third-container .third-col{
+    margin-right: -3%;
+    border-top: solid 1px white;
+    border-left: solid 2px #363636;
+    border-bottom: solid 2px #363636;
+}
+
+.third-container .little-text{
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.third-container .arrow-max, .third-container .arrow-min{
+    text-align: center;
+    font-size: 5rem;
+    margin-top: -25%;
+}
+
+.third-container .arrow-min{
+    line-height: 90%;
+}
+
+/* ***** ICONS **** */
+.ok-button {
+    font-size: 1.9rem;
+}
+
+.icon-power{
+    background: url("../img/power.svg") no-repeat;
+    background-size: contain;
+    background-position: right top;
+    width: 25%;
+}
+
+.icon-return{
+    background: red url("../img/return.svg") no-repeat;
+    background-size: 30%;
+    background-position: center;
+    width: 60px;
+    height: 40px;
+    text-align: right;
+}
+
+.icon-search{
+    background: blue    url("../img/search.svg") no-repeat;
+    background-size: 30%;
+    background-position: center;
+    width: 60px;
+    height: 40px;
+    text-align: right;
+}
+
+.icon-top{
+    background: url("../img/right.svg") no-repeat;
+    background-size: contain;
+    background-position: center top;
+    width: 40px;
+    height: 40px;
+    -webkit-transform: rotate(-90deg);
+}
+
+.icon-right{
+    background: url("../img/right.svg") no-repeat;
+    background-size: contain;
+    background-position: right center;
+    width: 40px;
+    height: 40px;
+}
+
+.icon-bottom{
+    background: url("../img/right.svg") no-repeat;
+    background-size: contain;
+    background-position: center top;
+    width: 40px;
+    height: 40px;
+    -webkit-transform: rotate(90deg);
+}
+
+.icon-left{
+    background: url("../img/right.svg") no-repeat;
+    background-size: contain;
+    background-position: right center;
+    width: 40px;
+    height: 40px;
+    -webkit-transform: rotate(-180deg);
+}
+
+.icon-menu{
+    background: green url("../img/menu.svg") no-repeat;
+    background-size: 30%;
+    background-position: 10% center;
+    width: 60px;
+    height: 40px;
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+.icon-menu:after{
+    content: "M";
+    top: 20%;
+    position: relative;
+    right: 7%;
+}
+
+.icon-info{
+    background: #D6C004 url("../img/menu.svg") no-repeat;
+        background-size: 30%;
+    background-position: 10% center;
+    width: 60px;
+    height: 40px;
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+.icon-info:after{
+    content: "I";
+    top: 20%;
+    position: relative;
+    right: 7%;
+}
+
+.icon-mute{
+    background: url("../img/mute.svg") no-repeat;
+    background-size: contain;
+    width: 150px;
+    background-position: center;
+    height: 40px;
+    margin-top: -10%;
+}
+
+.icon-forward{
+    background: url("../img/fast.svg") no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 55px;
+    height: 40px;
+}
+
+.icon-backward{
+    background: url("../img/fast.svg") no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 55px;
+    height: 40px;
+    -webkit-transform: rotate(-180deg);
+}
+
+.icon-record{
+    background: url("../img/record.svg") no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 150px;
+    background-position: center;
+    height: 30px;
+    margin-top: 10%;
+}
+
+.icon-play{
+    background: url("../img/play_pause.svg") no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 150px;
+    background-position: center;
+    height: 70px;
+}
+
+.logo-free{
+    background: url("../img/logo_free.png") no-repeat;
+    background-size: contain;
+    height: 80px;
+    width: 170px;
+    background-position: center;
+}
+
+
