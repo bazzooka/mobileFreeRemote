@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Free Remote</title>
+    </head>
+    <body>
+        <div class="remote">
+            <div class="first-container">
+                <div class="swap-mode">&nbsp;</div>
+                <div key="power" class="icon-power"></div>
+            </div>
+            <div class="second-container">
+                <div class="chaines">
+                    <div key="1" class="chaine">1</div>
+                    <div key="2" class="chaine">2</div>
+                    <div key="3" class="chaine">3</div>
+                    <div key="4" class="chaine">4</div>
+                    <div key="5" class="chaine">5</div>
+                </div>
+                <div class="chaines">
+                    <div key="6" class="chaine">6</div>
+                    <div key="7" class="chaine">7</div>
+                    <div key="8" class="chaine">8</div>
+                    <div key="9" class="chaine">9</div>
+                    <div key="0" class="chaine">0</div>
+                </div>
+                <div class="arrow-menu">
+                    <div class="first-col column">
+                        <div key="red" class="icon-return"></div>
+                        <div key="green" class="icon-menu"></div>
+                    </div>
+                    <div class="second-col column">
+                        <div key="left" class="icon-left"></div>                        
+                    </div>
+                    <div class="third-col column">
+                        <div key="up" class="icon-top"></div>    
+                        <div key="ok" class="ok-button">OK</div>
+                        <div key="down" class="icon-bottom"></div>
+                    </div>
+                    <div class="fourth-col column">
+                        <div key="right" class="icon-right"></div>
+                    </div>
+                    <div class="five-col column">
+                        <div key="blue" class="icon-search"></div>
+                        <div key="yellow" class="icon-info"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="third-container">
+                <div class="first-col">
+                    <div key="vol_inc" class="arrow-max">+</div>
+                    <div class="little-text">VOL</div>
+                    <div key="vol_dec" class="arrow-min">-</div>
+                    <div key="bwd" class="icon-backward"></div>
+                </div>
+                <div class="second-col">
+                    <div key="home" class="logo-free"></div>
+                    <div key="mute" class="icon-mute"></div>
+                    <div key="rec" class="icon-record"></div>
+                    <div key="play" class="icon-play"></div>
+                </div>
+                <div class="third-col">
+                    <div key="prgm_inc" class="arrow-max">+</div>
+                    <div class="little-text">PROG</div>
+                    <div key="prgm_dec" class="arrow-min">-</div>
+                    <div key="fwd" class="icon-forward"></div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
